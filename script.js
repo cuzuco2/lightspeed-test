@@ -34,6 +34,7 @@ document.getElementById('interaction-button').addEventListener('click', async ()
     console.log(`Interaction took ${interactionTime.toFixed(2)}ms`);
 
     alert("Button Clicked! (Slowly)"); // This itself can contribute to INP
+    longRunningFunction();  // Add a very slow function call here!
 });
 
 // Carousel Logic (contributes to CLS if not sized correctly)
