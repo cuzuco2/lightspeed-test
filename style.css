@@ -1,0 +1,52 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+#header {
+    width: 100%;
+    background-color: #f0f0f0;
+    height: 100px;
+    /* Initial height */
+    transition: height 0.5s ease-in-out;
+}
+
+#content {
+    padding: 20px;
+}
+
+.delayed-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    /* Initial auto height */
+}
+
+#interaction-button {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+#injected-content {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-item {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-image {
+    width: 100%;
+    height: auto;
+}
