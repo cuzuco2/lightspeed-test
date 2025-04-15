@@ -5,13 +5,13 @@ function delay(ms) {
 
 // CLS Issue 1: Header height change
 window.onload = async () => {
-    await delay(500);
+    await delay(1500);
     document.getElementById('header').style.height = '200px'; // Expand header
 };
 
 // CLS Issue 2 & LCP Issue: Delayed loading of image
 setTimeout(async () => {
-    await delay(1000); // Simulate slow load
+    await delay(3000); // Simulate slow load
     const img = document.querySelector('.delayed-image');
     img.src = 'delayed.jpg'; // Replace with a larger image
 }, 500);
@@ -28,7 +28,7 @@ setTimeout(async () => {
 // INP Issue: Slow interaction
 document.getElementById('interaction-button').addEventListener('click', async () => {
     let startTime = performance.now();
-    await delay(300); // Simulate a slow operation
+    await delay(1300); // Simulate a slow operation
     let endTime = performance.now();
     let interactionTime = endTime - startTime;
     console.log(`Interaction took ${interactionTime.toFixed(2)}ms`);
