@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Performance Nightmare</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="external-library.css">  <script src="heavy-script.js" defer></script>       </head>
+    <link rel="stylesheet" href="external-library.css">
+    <script src="heavy-script.js" defer></script>
+</head>
 
 <body>
 
@@ -18,8 +20,7 @@
         <div id="injected-content">
             Initial Content
         </div>
-        <div class="carousel-container">
-            <div class="carousel-item" style="opacity: 1;">
+        <div id="carousel-container" class="carousel-container">  <div class="carousel-item" style="opacity: 1;">
                 <img src="carrousel1.jpg" alt="Cat Picture" class="carousel-image">
             </div>
             <div class="carousel-item">
@@ -28,7 +29,7 @@
             <div class="carousel-item">
                 <img src="carrousel3.jpg" alt="Dog Picture" class="carousel-image">
             </div>
-            <img src="very-large-image.jpg" alt="Very Large Image" class="carousel-image">  </div>
+        </div>
 
         <button id="interaction-button">Click Me</button>
 
