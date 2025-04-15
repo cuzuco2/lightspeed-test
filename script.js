@@ -21,7 +21,7 @@ setTimeout(async () => {
     await delay(2000);
     document.getElementById('injected-content').innerHTML = `
         <p>This content was injected dynamically after a delay. This causes layout shift.</p>
-        <iframe src="https://dash.elfsight.com/widget/51ffc79f-18cd-446e-8be6-a29c0f0a609d" width="400" height="300"></iframe>
+        <iframe src="https://en.wikipedia.org/wiki/Adobe_Inc." width="400" height="300"></iframe>
     `;
 }, 1500);
 
